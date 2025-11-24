@@ -2,13 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Nav/Header";
 import Home from './Components/Pages/Home';
+import About from './Components/Pages/About';
+import Contact from './Components/Pages/Contact';
+import News from './Components/Pages/News';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
+
         <Routes>
           <Route exact path='/' element={ <Home /> } />
           <Route path='/About' element={ <About /> } />
