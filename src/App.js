@@ -6,6 +6,7 @@ import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import News from './Components/Pages/News';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './Components/Nav/Footer';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path='/News' element={ <News /> } />
           <Route path='/Contact' element={ <Contact /> } />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </div>
   );
